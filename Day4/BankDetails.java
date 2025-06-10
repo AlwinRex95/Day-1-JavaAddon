@@ -1,5 +1,7 @@
 package Day4;
 
+import java.util.Scanner;
+
 class SbiAcc{
 	private String Accholder;
 	private int Balance;
@@ -42,6 +44,6 @@ public class BankDetails {
 		System.out.println("Available Balance:"+ac.getBalance());
 				
 	}
-
+	
 }
 
