@@ -1,0 +1,39 @@
+Eception or Errors:
+->Exception or errors triggers by the JVM which forces to abnormally terminated the program.
+Types of Exception :
+1.Checked Exception
+2.Unchecked Exception
+
+->Checked Exception occurs on run time errors
+Runtime errors:
+>classnotFound,
+>InterrupredException,
+>IOException,
+>SQLException,
+>FileNotFound.
+
+Unchecked Exception:
+->Unchecked Exception that inherit the RuntimeException are known as Unchecked Exceptions.
+Example:
+>Arithmetic Exception,
+>NullPoint Exception,
+>ArrayIndexOutOfBoundsException,etc.
+
+->Errors in irrecoverable, Some example of errors are OutOfMemoryError, VirtualMachineError, AsertionError etc.
+->Implicityly by the Users means through and throws keyword and Explicitly by the JVM.
+
+Syntax:
+try{
+//Block of code to try
+}
+catch(Exception e){
+//Block of code to handle errors
+}
+
+What will be the error:
+public class Main{
+   public static void main(String[]args){
+	int[] myNumbers ={1,2,3};
+	System.out.println(myNumbers[10]);//error!
+    }
+}
