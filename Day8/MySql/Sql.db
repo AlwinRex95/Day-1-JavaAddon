@@ -1,0 +1,57 @@
+
+create table emp1(
+empid int primary key,
+name varchar(25),
+dept varchar(25),
+salary int,
+joindate date
+)
+--------------
+insert into emp1(empid,name,dept,salary,joindate) VALUES
+(1,'Harish','finance',50000,'2023-06-12'),
+(2,'Alwin','Marketing',100000,'2023-06-06'),
+(3,'Hem','technology',200000,'2023-06-24'),
+(4,'Karthi','Developer',400000,'2023-06-20'),
+(5,'vicky ','Developer',400000,'2023-06-20')
+--------------
+
+select*
+from emp1
+--------------
+
++-------+---------+------------+---------+------------+
+| empid | name    | dept        | salary | joindate   |
++-------+---------+-------------+--------+------------+
+|     1 | Alwin   | finance     |  50000 | 2023-06-12 |
+|     2 | Harish  | Marketing   | 100000 | 2023-06-06 |
+|     3 | Hem     | technology  | 200000 | 2023-06-24 |
+|     4 | Karthi  | Developer   | 400000 | 2023-06-20 |
+|     5 | Vignesh | Developer   | 400000 | 2023-06-20 |
++-------+---------+------------+---------+------------+
+
+mysql> select * from emp1 where dept="finance";
+--------------
+select * from emp1 where dept="finance"
+--------------
+
++-------+--------+---------+--------+------------+
+| empid | name   | dept    | salary | joindate   |
++-------+--------+---------+--------+------------+
+|     1 | Alwin  | finance |  50000 | 2023-06-12 |
++-------+--------+---------+--------+------------+
+
+update emp1 set salary=salary+50000 where empid= 1
+
+  select*
+from emp1
+--------------
+
++-------+-----------+------------+--------+------------+
+| empid | name      | dept       | salary | joindate   |
++-------+-----------+------------+--------+------------+
+|     1 | Alwin     | finance    | 100000 | 2023-06-12 |
+|     2 | Harish    | Developer  | 100000 | 2023-06-06 |
+|     3 | Hem       | technology | 200000 | 2023-06-24 |
+|     4 | Karthi    | Developer  | 400000 | 2023-06-20 |
+|     5 | Vignesh   | Developer  | 400000 | 2023-06-20 |
++-------+-----------+------------+--------+------------+
