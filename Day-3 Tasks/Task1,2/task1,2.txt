@@ -1,0 +1,16 @@
+ insert into students(studentid,firstname,lastname,grade,total,Fess)values
+    -> (1,'Alwin','Rex','A',390,20000),
+    -> (2,'Harish','LT','B',450,30000),
+    -> (3,'Hemnsth','S','B',429,25000),
+    -> (4,'Karthi','Keyan,'A',419,35000),
+    -> (5,'Nisanth','S','B',370,33000);
+ select* from addon;
++-----------+-----------+----------+-------+-------+-------+
+| studentid | firstname | lastname | grade | total | Fess  |
++-----------+-----------+----------+-------+-------+-------+
+|         1 | Alwin     | Rex      | A     |   390 | 20000 |
+|         2 | Harish    | LT       | B     |   450 | 30000 |
+|         3 | Hemnsth   | S        | B     |   429 | 25000 |
+|         4 | Karthi    | Keyan    | A     |   419 | 35000 |
+|         5 | Nisanth   | S        | B     |   370 | 33000 |
++-----------+-----------+----------+-------+-------+-------+
