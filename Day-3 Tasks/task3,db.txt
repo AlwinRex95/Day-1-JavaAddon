@@ -1,0 +1,9 @@
+Search books by keyword using LIKE in mysql
+
+select* from books
+-> where book_title like 'I%e';
++---------+----------------------------------+------------+-----------+----------------+-------+
+| book_id | book_title | author | genre | published_year | price |
++---------+----------------------------------+------------+-----------+----------------+-------+
+| NULL | Introduction to Computer Science | John Smith | Education | 2015 | 45.00 |
++---------+----------------------------------+------------+-----------+----------------+-------+
