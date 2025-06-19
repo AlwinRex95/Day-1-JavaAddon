@@ -1,0 +1,34 @@
++-----------+---------------------+-------+
+| productid | productname         | price |
++-----------+---------------------+-------+
+|    103721 |     Mouse           |   280 |
+|    103722 | Mechanical Keyboard |   580 |
+|    103723 | Gaming Headset      |   699 |
+|    103724 | USB Cable           |   120 |
+|    103725 | Laptop Stand        |   350 |
+|    103726 | Webcam 720p         |   500 |
+|    103727 | Bluetooth Speaker   |   400 |
+|    103728 | External Hard Drive |   900 |
+|    103729 | Smartphone Charger  |   150 |
+|    103730 | Desk Lamp LED       |   339 |
++-----------+---------------------+-------+
+
+
+ select max(price)
+    -> from products
+    -> ;
++------------+
+| max(price) |
++------------+
+|        900 |
++------------+
+
+
+select min(price)
+    -> from products
+    -> ;
++------------+
+| min(price) |
++------------+
+|        120 |
++------------+

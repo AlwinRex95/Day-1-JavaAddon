@@ -1,0 +1,9 @@
+select avg(sal)
+    -> from emp
+    -> where deptno = deptno
+    -> ;
++-------------+
+| avg(sal)    |
++-------------+
+| 2073.214286 |
++-------------+

@@ -1,0 +1,13 @@
+select studdept,count(studname)
+    -> from student
+    -> where studdept = studdept
+    -> group by studdept,studname;
++------------------------+-----------------+
+| studdept               | count(studname) |
++------------------------+-----------------+
+| Computer Technology    |               1 |
+| Information Technology |               1 |
+| Computer Science       |               1 |
+| BCA                    |               1 |
+| B.com                  |               1 |
++------------------------+-----------------+
