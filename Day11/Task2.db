@@ -1,0 +1,13 @@
+Write a Sub-query to find top performer?
+
+ select s.studname, s.studrollno, s.studemail, s.course, m.subject, m.marks
+    -> from Students s
+    -> join Marks m ON s.studrollno = m.studrollno
+    -> where m.marks = (
+    -> select max(marks) from Marks
+    -> );
++-----------+------------+----------------------+---------------------+---------+-------+
+| studname  | studrollno | studemail            | course              | subject | marks |
++-----------+------------+----------------------+---------------------+---------+-------+
+| Alwin     |     103723 |alwinrex95@gmail.com  | Computer Technology | SSOS    |    95 |
++-----------+------------+----------------------+---------------------+---------+-------+

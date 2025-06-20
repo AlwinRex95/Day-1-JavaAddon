@@ -1,0 +1,20 @@
+Write a query to join orders and customers?
+
+
+select o.order_id,o.order_date,o.amount,c.customer_id,c.customer_name,c.email,c.phone
+    -> from Orders o
+    -> join Customers c
+    -> on o.customer_id = c.customer_id;
++----------+------------+--------+-------------+----------------+--------------------------+------------+
+| order_id | order_date | amount | customer_id | customer_name  | email                    | phone      |
++----------+------------+--------+-------------+----------------+--------------------------+------------+
+|      101 | 2025-06-02 |    250 |           1 | Alwin          | alwinrex@gmail.com       | 9342169325 |
+|      102 | 2025-06-05 |    450 |           2 | Harish         | harishlogu74@gmail.com   | 9976824525 |
+|      103 | 2025-06-08 |    300 |           3 | Karthi         | karthi46@gmail.com       | 8791760568 |
++----------+------------+--------+-------------+----------------+--------------------------+------------+
+
+
+
+
+
+ 
